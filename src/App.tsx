@@ -1,5 +1,6 @@
 import { createSignal } from "solid-js";
 import "./App.css";
+import mePng from "/me.png";
 
 function App() {
   const [copied, setCopied] = createSignal(false);
@@ -17,7 +18,7 @@ function App() {
         style="background: #ffffff"
       >
         <img
-          src="/me.png"
+          src={mePng}
           alt="Caleb Ouellette"
           class="w-20 h-20 rounded-full object-cover"
         />
